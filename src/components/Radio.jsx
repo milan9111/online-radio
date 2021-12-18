@@ -44,9 +44,10 @@ const Radio = () => {
     return (
       <div className="radio">
         <div className="filters">
-          {filters.map((filter) => {
+          {filters.map((filter, index) => {
             return (
             <span
+              key={index}
               className={stationFilter === filter ? "selected" : ""}
               onClick={() => setStationsFilter(filter)}>
               {filter}
