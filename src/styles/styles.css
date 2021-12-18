@@ -1,0 +1,165 @@
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  background: #281f35;
+  background: -webkit-gradient(linear, rigth, from(#281f35), to(#3d2e53));
+  background: linear-gradient(to rigth, #281f35, #3d2e53);
+  color: #f0f0f0;
+  font-family: 'Architects Daughter', cursive;
+}
+
+h1 {
+  margin: 1em 0 0 0;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 2em;
+}
+
+.radio {
+  max-width: 60em;
+  width: 100%;
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2em;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+span {
+  margin: 0.25em;
+  border: 1px solid #e36bae;
+  border-radius: 10px;
+  padding: 0.25em 0.75em;
+}
+
+span:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e36bae), to(#fb743e));
+  background: linear-gradient(#e36bae, #fb743e);
+}
+
+.selected {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e36bae), to(#fb743e));
+  background: linear-gradient(#e36bae, #fb743e);
+}
+
+.stations {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  width: 100%;
+}
+
+.station {
+  font-size: 1.2em;
+  border: 1px solid #4c3e5f;
+  margin: 0.25em;
+  border-radius: 10px;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.station:hover {
+  border-color: #e36bae;
+}
+
+.stationName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1em;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 2px solid #4c3e5f;
+  margin: 0 0.25em;
+}
+
+.audio {
+  width: 100%;
+}
+
+.rhap_container.player {
+  background-color: #4c3e5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  padding: 0.25em 0.75em;
+  border-radius: 10px;
+}
+
+.rhap_stacked .rhap_controls-section {
+  margin-top: 0 !important;
+}
+
+.rhap_controls-section .rhap_volume-controls {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .stations {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
+  img {
+    display: none;
+  }
+}
